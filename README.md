@@ -15,7 +15,7 @@ and you send a PR, I will consider merging it if it fixes the problem. **USE AT 
         let bytes = [0xBCu8, 0xCF, 0xBE, 0xC3, 0xFF, 0xFF, 0xFF];
 
         // you will need to provide internal buffer type
-        // you will also need to provide the encoding at language at compile time
+        // you will also need to provide the language at compile time
         let s = PkString::<Intl, [u8; 7]>::from(bytes);
         assert_eq!(&format!("{}", s), "BUDI");
         println!("{}", s);
@@ -30,7 +30,7 @@ and you send a PR, I will consider merging it if it fixes the problem. **USE AT 
         let bytes = [112u8, 142, 139, 123, 83, 255, 0, 8, 76, 125];
         
         // you will need to provide internal buffer type
-        // you will also need to provide the encoding at language at compile time
+        // you will also need to provide the language at compile time
         let s = PkString::<Jpn, [u8; 10]>::from(bytes);
         assert_eq!(&format!("{}", s), "ミズゴロウ");
         println!("{}", s);
