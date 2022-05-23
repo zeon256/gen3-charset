@@ -1,6 +1,10 @@
 # `Gen3-Charset`
 > This crate provides Pokemon generation 3 character set
 
+## Maintenance 
+This crate is **experimental at best** and is not likely to receive updates. However if there are bugs 
+and you send a PR, I will consider merging it if it fixes the problem. **USE AT YOUR OWN RISK!**
+
 
 ## Usage 
 > (International: EN, DE, IT, FR)

@@ -257,7 +257,7 @@ where
 }
 
 mod test {
-    use crate::{PkStrFFI, Jpn};
+    use crate::{Jpn, PkStrFFI};
 
     use super::{Intl, PkString};
     use std::mem::size_of;
