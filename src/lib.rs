@@ -257,7 +257,7 @@ where
 }
 
 mod test {
-    use crate::charset::{PkStrFFI, Jpn};
+    use crate::{PkStrFFI, Jpn};
 
     use super::{Intl, PkString};
     use std::mem::size_of;
@@ -273,6 +273,15 @@ mod test {
         let bytes = [0xBCu8, 0xCF, 0xBE, 0xC3, 0xFF, 0xFF, 0xFF];
         let s = PkString::<Intl, [u8; 7]>::from(bytes);
         assert_eq!(&format!("{}", s), "BUDI");
+        println!("{}", s);
+        println!("{:?}", s);
+    }
+
+    #[test]
+    fn parse_pkstring_jpn() {
+        let bytes = [112u8, 142, 139, 123, 83, 255, 0, 8, 76, 125];
+        let s = PkString::<Jpn, [u8; 10]>::from(bytes);
+        assert_eq!(&format!("{}", s), "ミズゴロウ");
         println!("{}", s);
         println!("{:?}", s);
     }
