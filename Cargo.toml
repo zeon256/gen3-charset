@@ -1,7 +1,13 @@
 [package]
 name = "gen3-charset"
+authors = ["budinverse <me@inve.rs>"]
+homepage = "https://github.com/BudiNverse/gen3-charset"
+repository = "https://github.com/BudiNverse/gen3-charset"
+description = "Pokemon Generation 3 Character Set Support (GBA)"
 version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
