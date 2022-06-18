@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["gen3_charset"];
